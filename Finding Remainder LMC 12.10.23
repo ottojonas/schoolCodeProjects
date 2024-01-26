@@ -1,0 +1,11 @@
+Finding Remainder LMC 12.10.23
+
+inp 
+sta first 
+inp 
+sta second 
+lda first  
+loop sub second 
+brp loop 
+add second
+out
