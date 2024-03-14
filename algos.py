@@ -6,7 +6,7 @@ def linearSearch(data, searchKey):
     found = False
     length = len(data)
     count = 0
-    while count < length and found == False:
+    while count < length and not found:
         if data[count] == searchKey:
             return True
         else:
@@ -18,7 +18,7 @@ def binarySearch(data, searchKey):
     found = False
     head = 0
     tail = len(data) - 1
-    while found == False and head < tail:
+    while not found and head < tail:
         midPoint = (head + tail) // 2
         if data[midPoint] == searchKey:
             return True
